@@ -23,8 +23,7 @@
       <section class="mt-3">
          <div class="container-fluid">
          <h4 class="text-center" style="color:green"> Invoice </h4>
-         <button style="background:#0066A2;border-style:outset;border-color:#0066A2;height:30px;margin-left: 1077px;width:75px;text-shadow:none;">
-                                <a style= "margin-top: 6px;margin-left: 3px;color: white;" href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a></button>
+               <a style= "margin-top: 6px;margin-left: 3px;color: white;background:#0066A2;border-style:outset;border-color:#0066A2;height:30px;margin-left: 1077px;width:75px;text-shadow:none;text-align:center;text-decoration: none;" href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
 
          {{-- <h6 class="text-center"> Shine Metro Mkadi Naka (New - Delhi)</h6> --}}
          

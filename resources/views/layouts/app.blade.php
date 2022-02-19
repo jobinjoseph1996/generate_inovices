@@ -60,8 +60,7 @@
                                 <!-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a> -->
-                                <button style="background:#0066A2;border-style:outset;border-color:#0066A2;height:30px;width:165px;text-shadow:none;">
-                                <a style= "margin-top: 6px;margin-left: 3px;color: white;" href="{{ url('/generate_invoice') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Generate Invoice</a></button>
+                                <a style= "margin-top: 6px;margin-left: 3px;color: white;background:#0066A2;border-style:outset;border-color:#0066A2;height:30px;width:165px;text-shadow:none;text-align:center;text-decoration: none;" href="{{ url('/generate_invoice') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Generate Invoice</a>
 
                                 <div style="margin-left:740px;">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
