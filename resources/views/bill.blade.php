@@ -123,13 +123,13 @@
    var i = 0;
 
   $("#discount_val").change(function() {
-   var discount = parseFloat($("#discount_val").val()).toFixed(2); 
+   var discount = parseFloat($("#discount_val").val()).toFixed(3); 
    var sub_tot_tax = $("#sub_tot_with_tax").html();
    if(sub_tot_tax!="")
    {
       if(discount!="")
       {
-         if(discount>sub_tot_tax)
+         if(Math.fround(discount) > Math.fround(sub_tot_tax))
          {
             alert("Discount amount exceeded.");
             $("#discount_val").val('');
@@ -160,6 +160,7 @@
   $(document).on('click', '.btn_remove', function() {
     var button_id = $(this).attr("id");
     $('#row' + button_id + '').remove();
+    upd_art(0);
   });
   
 $("#print").click(function(){
